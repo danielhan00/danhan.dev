@@ -1,7 +1,7 @@
 export interface HeaderProps {
-    name: string;
+  name: string;
 }
 
 export const Header = (props) => {
-    return <header>header</header>;
-}
+  return <header>header</header>;
+};
