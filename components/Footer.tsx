@@ -1,7 +1,7 @@
 export interface FooterProps {
-    name: string;
+  name: string;
 }
 
 export const Footer = (props) => {
-    return <footer>footer</footer>;
-}
+  return <footer>footer</footer>;
+};

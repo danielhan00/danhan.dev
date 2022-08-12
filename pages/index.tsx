@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Footer } from '../components/Footer'
-import { Header } from '../components/Header'
-import { Navigation } from '../components/Navigation'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Button } from "../components/Button";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { Navigation } from "../components/Navigation";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -14,17 +15,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>
-      <Navigation/>
+      <Header />
+      <Navigation />
       <main className={styles.main}>
-      Hi, my name is
-Daniel Han.
-I build things for the web.
-I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. 
-Currently, I’m focused on building accessible, human-centered products at Haldi.
+        Hi, my name is Daniel Han. I build things for the web. I’m a software
+        engineer specializing in building (and occasionally designing)
+        exceptional digital experiences. Currently, I’m focused on building
+        accessible, human-centered products at Haldi.
       </main>
 
-      <Footer/>
+      <Button>Resume</Button>
+
+      <Footer />
     </div>
-  )
+  );
 }
