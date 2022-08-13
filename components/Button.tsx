@@ -1,4 +1,3 @@
-import { ScriptProps } from "next/script";
 import React from "react";
 
 export interface ButtonProps {
@@ -14,7 +13,7 @@ export const Button: React.FC<ButtonProps> = ({
   ...rest
 }) => {
   return (
-    <button name="Resume" onClick={onClick} {...rest}>
+    <button name={name} onClick={onClick} {...rest}>
       {children}
     </button>
   );
