@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Daniel Han</title>
         <meta name="description" content="Daniel Han" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ivo" />
       </Head>
 
       <Header name="universal header"></Header>
