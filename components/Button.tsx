@@ -5,6 +5,8 @@ export interface ButtonProps {
   name?: string;
   onClick?: () => void;
   href?: string;
+  imageSRC?: string;
+  newTab?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -12,11 +14,14 @@ export const Button: React.FC<ButtonProps> = ({
   name,
   onClick,
   href,
+  imageSRC,
+  newTab,
   ...rest
 }) => {
   return (
-    <button name={name} onClick={onClick} {...rest}>
-      <a href={href} target="_blank" rel="noopener noreferrer">
+    <button name={name} {...rest}>
+      <a href={href} target={newTab} rel="noopener noreferrer">
+        <img src={imageSRC} onClick={onClick} />
         {children}
       </a>
     </button>
