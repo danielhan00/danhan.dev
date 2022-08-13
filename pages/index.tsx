@@ -17,7 +17,11 @@ export default function Home() {
       </Head>
 
       <Header></Header>
-      <Button name="resume" onClick={() => console.log("successful click")}>
+      <Button
+        name="resume"
+        onClick={() => console.log("successful click")}
+        href="/Daniel_Han_Resume.pdf"
+      >
         {"My Resume"}
       </Button>
 
