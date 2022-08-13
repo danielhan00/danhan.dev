@@ -15,7 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header></Header>
+      <Button
+        children="My Resume"
+        name="resume"
+        onClick={() => console.log("successful click")}
+      ></Button>
+
       <Navigation />
       <main className={styles.main}>
         Hi, my name is Daniel Han. I build things for the web. I’m a software
@@ -23,8 +29,6 @@ export default function Home() {
         exceptional digital experiences. Currently, I’m focused on building
         accessible, human-centered products at Haldi.
       </main>
-
-      <Button>Resume</Button>
 
       <Footer />
     </div>
