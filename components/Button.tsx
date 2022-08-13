@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button name={name} onClick={onClick} {...rest}>
-      <a href={href} target="_blank">
+      <a href={href} target="_blank" rel="noreferrer">
         {children}
       </a>
     </button>
