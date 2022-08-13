@@ -16,14 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header></Header>
-      <Button
-        name="resume"
-        onClick={() => console.log("successful click")}
-        href="/Daniel_Han_Resume.pdf"
-      >
-        {"My Resume"}
-      </Button>
+      <Header name="universal header"></Header>
 
       <Navigation />
       <main className={styles.main}>
