@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Link from "next/link";
 
 export interface HeaderProps {
   name?: string;
@@ -9,9 +10,7 @@ export const Header: React.FC<HeaderProps> = ({ name, ...rest }) => {
     <header>
       <ul>
         <li>
-          <a className="Button" href="/">
-            LOGO
-          </a>
+          <Link href="/">LOGO</Link>
         </li>
         <li>
           <Button
