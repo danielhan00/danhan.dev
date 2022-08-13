@@ -5,6 +5,7 @@ export interface HeaderProps {
   name?: string;
 }
 
+// tester
 export const Header: React.FC<HeaderProps> = ({ name, ...rest }) => {
   return (
     <header>
