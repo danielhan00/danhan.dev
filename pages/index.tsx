@@ -16,11 +16,9 @@ export default function Home() {
       </Head>
 
       <Header></Header>
-      <Button
-        children="My Resume"
-        name="resume"
-        onClick={() => console.log("successful click")}
-      ></Button>
+      <Button name="resume" onClick={() => console.log("successful click")}>
+        <h1 children="My Resume" />
+      </Button>
 
       <Navigation />
       <main className={styles.main}>

@@ -2,7 +2,7 @@ import { ScriptProps } from "next/script";
 import React from "react";
 
 export interface ButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   name?: string;
   onClick: () => void;
 }
