@@ -34,7 +34,7 @@ export const Button: React.FC<ButtonProps> = ({
     );
   } else {
     return (
-      <button name={name}>
+      <button name={name} className="rounded">
         <a href={href} target={newTab} rel="noopener noreferrer">
           {children}
         </a>
