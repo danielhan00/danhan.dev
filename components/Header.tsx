@@ -3,25 +3,25 @@ import Link from "next/link";
 
 export interface HeaderProps {
   name?: string;
+  style?: string;
 }
 
 // tester
-export const Header: React.FC<HeaderProps> = ({ name, ...rest }) => {
+export const Header: React.FC<HeaderProps> = ({ name, style, ...rest }) => {
   return (
-    <header>
-      <ul>
-        <li>
+    <header className={style}>
+      <div className="flow-root">
+        <p className="float-left text-green text-3xl">
           <Button
-            type="image"
+            type="text"
             name="logo"
             onClick={() => console.log("homepage nav")}
             href="/"
-            imageSRC="/danhanlogo.svg"
-            height="200"
-            width="200"
-          ></Button>
-        </li>
-        <li>
+          >
+            {"dh"}
+          </Button>
+        </p>
+        <p className="float-right text-green text-3xl">
           <Button
             type="text"
             name="resume"
@@ -29,10 +29,10 @@ export const Header: React.FC<HeaderProps> = ({ name, ...rest }) => {
             href="/Daniel_Han_Resume.pdf"
             newTab="_blank"
           >
-            {"Click here for my Resume <3"}
+            {"Resume"}
           </Button>
-        </li>
-      </ul>
+        </p>
+      </div>
     </header>
   );
 };
