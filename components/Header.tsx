@@ -9,18 +9,21 @@ export interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ name, ...rest }) => {
   return (
     <header>
-      {name}
       <ul>
         <li>
           <Button
+            type="image"
             name="logo"
             onClick={() => console.log("homepage nav")}
             href="/"
             imageSRC="/danhanlogo.svg"
+            height="200"
+            width="200"
           ></Button>
         </li>
         <li>
           <Button
+            type="text"
             name="resume"
             onClick={() => console.log("resume click <3")}
             href="/Daniel_Han_Resume.pdf"

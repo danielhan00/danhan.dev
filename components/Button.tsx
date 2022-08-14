@@ -7,6 +7,9 @@ export interface ButtonProps {
   href?: string;
   imageSRC?: string;
   newTab?: string;
+  type: string;
+  height?: string;
+  width?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -16,16 +19,28 @@ export const Button: React.FC<ButtonProps> = ({
   href,
   imageSRC,
   newTab,
+  type,
+  height,
+  width,
   ...rest
 }) => {
-  return (
-    <button name={name} {...rest}>
-      <a href={href} target={newTab} rel="noopener noreferrer">
-        <img src={imageSRC} onClick={onClick} />
-        {children}
+  if (type == "image") {
+    return (
+      <a href={href} target={newTab}>
+        <button name={name} type="button">
+          <img src={imageSRC} height={height} width={width} />
+        </button>
       </a>
-    </button>
-  );
+    );
+  } else {
+    return (
+      <button name={name}>
+        <a href={href} target={newTab} rel="noopener noreferrer">
+          {children}
+        </a>
+      </button>
+    );
+  }
 };
 
 export default Button;
