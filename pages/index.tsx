@@ -18,7 +18,7 @@ export default function Home() {
 
       <Header name="universal header"></Header>
 
-      <Navigation />
+      <Navigation name="contact info"></Navigation>
       <main className={styles.main}>
         Hi, my name is Daniel Han. I build things for the web. I’m a software
         engineer specializing in building (and occasionally designing)
