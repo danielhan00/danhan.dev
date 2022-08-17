@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        con: ["Consolas", "sans-serif"],
+      },
       screens: {
         sm: "640px",
         md: "768px",
@@ -16,6 +19,7 @@ module.exports = {
       },
       colors: {
         green: "#2E8B57",
+        peach: "#FFE5B4",
       },
     },
   },
