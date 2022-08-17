@@ -5,7 +5,7 @@ This is a working repo for my personal portfolio website :)
 ## What I've done!
 - Created custom React components to make all relevant components and objects on the page
 
-##TODO
+## TODO
 - Add more content (I have lots of thoughts :))
 - Make the site mobile friendly
 
