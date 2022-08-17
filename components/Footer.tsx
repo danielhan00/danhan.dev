@@ -4,8 +4,11 @@ export interface FooterProps {
 
 export const Footer = (props) => {
   return (
-    <footer className="mt-10 justify-center gap-2 text-center text-sm print:hidden md:mt-20">
-      <p className="text-green">Built by Daniel Han :) WIP as of 8/16/22</p>
+    <footer className="bg-peach w-full flex-wrap items-center justify-between py-4 border-4 font-con pt-8 pb-8 ">
+      <p className="text-center">
+        Built by Daniel Han :) <br />
+        inspired by fellow Northeastern University Alum Brittany Chiang
+      </p>
     </footer>
   );
 };

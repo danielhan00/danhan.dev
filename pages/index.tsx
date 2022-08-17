@@ -10,26 +10,26 @@ export default function Home() {
       <Head>
         <title>Daniel Han</title>
         <meta name="description" content="Daniel Han" />
-        <link rel="icon" href="/favicon.ivo" />
+        <link rel="icon" href="/sunLogo.png" />
         <link href="/dist/output.css" rel="stylesheet" />
       </Head>
 
-      <Header name="universal header" style="border-solid"></Header>
-      <main>
-        <h1 className="text-3xl text-green text-center">
-          Hi, my name is <b>Daniel Han</b>,
+      <main className="bg-sky-100 w-full flex-wrap items-center">
+        <Header name="universal header" style="border-solid"></Header>
+        <h1 className="text-3xl text-green text-center pt-20 font-con">
+          Hi! My name is <b className="font-con text-5xl">Daniel Han</b>,
         </h1>
-        <p className="text-2xl text-blue text-center">
+        <p className="text-2xl text-blue text-center pb-16">
           and I build things for the web. <br />
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. <br />
+          I’m a Full-stack Software Engineer specializing in building
+          exceptional digital experiences. <br />
           Currently, I’m focused on building accessible, human-centered products
           at Haldi.
         </p>
-      </main>
-      <Navigation name="contact info"></Navigation>
+        <Navigation name="contact info"></Navigation>
 
-      <Footer />
+        <Footer />
+      </main>
     </div>
   );
 }

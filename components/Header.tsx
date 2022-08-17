@@ -8,16 +8,16 @@ export interface HeaderProps {
 // tester
 export const Header: React.FC<HeaderProps> = ({ name, style, ...rest }) => {
   return (
-    <nav className="relative bg-blue-200 w-full flex-wrap items-center justify-between py-4 bg-gray-100 text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg">
+    <nav className="bg-sky-200 w-full flex-wrap items-center justify-between py-4 border-2 border-zinc-300 shadow-lg">
       <div className="container-fluid w-full flex flex-wrap items-center space-x-96 pr-96 pl-96 justify-center px-6">
         <Button
           type="image"
           name="logo"
           onClick={() => console.log("homepage nav")}
           href="/"
-          imageSRC="/danhanlogo.svg"
-          height="90"
-          width="90"
+          imageSRC="/sunLogo.png"
+          height="100"
+          width="100"
           style=""
         ></Button>
         <Button
@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({ name, style, ...rest }) => {
           onClick={() => console.log("resume click <3")}
           href="/Daniel_Han_Resume.pdf"
           newTab="_blank"
-          style="text-white bg-gradient-to-br from-green to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-2 mb-2"
+          style="font-con text-white border-2 border-black bg-gradient-to-br from-green to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-2 mb-2"
         >
           {"My Resume!"}
         </Button>
