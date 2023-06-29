@@ -17,14 +17,14 @@ export default function Home() {
       <main className="bg-sky-100 w-full flex-wrap items-center">
         <Header name="universal header" style="border-solid"></Header>
         <h1 className="text-3xl text-green text-center pt-20 font-con">
-          Hi! My name is <b className="font-con text-5xl">Daniel Han</b>,
+        <b className="font-con text-5xl">Hi!</b> My name is <b className="font-con text-5xl">Daniel Han</b>,
         </h1>
         <p className="text-2xl text-blue text-center pb-16">
           and I build things for the web. <br />
-          I’m a Full-stack Software Engineer specializing in building
+          I’m a Full-stack Software Engineer specializing in creating and molding
           exceptional digital experiences. <br />
           Currently, I’m focused on building accessible, human-centered products
-          at Haldi.
+          as a SWE Contractor at <a href="https://www.google.com/"><u>Google</u></a>, provided by <a href="https://www.moesol.com/"><u>Moebius Solutions</u></a>.
         </p>
         <Navigation name="contact info"></Navigation>
 
